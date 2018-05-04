@@ -1,0 +1,296 @@
+:root{
+    font-size: 18px;
+}
+
+/* Style the body */
+body {
+  font-family: "Raleway",sans-serif;
+  margin: 5vw;
+  padding: 0;
+}
+/* Header/logo Title */
+.header {
+    padding: 8vw;
+    text-align: center;
+    background: #333;
+    color: white;
+    }
+.header p{
+    font-size: 1.2rem;
+    position: relative;
+    text-align: center;
+}
+/* Increase the font size of the heading */
+.header h1 {
+    font-size: 3.5rem;
+        }
+
+/* Style the top navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+     
+    display: block;
+    color: white;
+    text-align: center;
+     float: left;
+    padding: 14px 20px;
+    text-decoration: none;
+         }
+
+/* Change color on hover */
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/*Column container*/ 
+.row {  
+    display: flex;
+    flex-wrap: wrap;
+}
+/* Main column */
+.main {   
+    -ms-flex: 100%; 
+    flex: 100%;
+    background-color: white;
+    padding: 20px;
+}
+/*style h3 font*/
+h3
+{
+    position: relative;
+    font-size: 1.6rem;
+    line-height: 1.2em;
+    font-weight: 300;
+    text-align: center;
+    color: #2b3033;
+    }
+/*style image*/
+.image{
+    margin-top: 5px;
+    background-image: url("16dd9e42-626c-45e3-bbf2-40888c00c14c.png");
+    width:60vw;
+    background-size: 100% 100%;
+    padding: 3vw;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+p{
+    text-align: justify;
+    text-justify: inter-word;
+}
+h2{
+    position: relative;
+    font-family: "Raleway",sans-serif;
+    font-size: 3rem;
+    line-height: 1.2em;
+    margin: 0.6em 0 0.4em;
+    font-weight: 900;
+    text-align: center;
+    color: #2b3033;
+    }
+span
+{
+    position: relative;
+    font-family: "Raleway1",sans-serif;
+    font-size: 0.6em;
+    line-height: 1.2em;
+    font-weight: 300;
+    color: #8e9aa1;
+    }
+
+.myimg {
+    border-radius: 50%;
+    margin-top: 5px;
+    background-image: url("myimg.png");
+    background-size: 100% 100%;
+    padding: 3vw;
+    margin-right: auto;
+    margin-left: auto;
+    width: 20vw;
+    }
+
+    .footer1 {
+    padding: 2vw;
+    text-align: center;
+    background: #ddd;
+}
+
+/* Style inputs, select elements and textareas */
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+/* Style the label to display next to the inputs */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: right;
+}
+
+/* Style the container */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/* Floating column for labels: 25% width */
+.col-25 {
+  text-align:left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+  text-align:  left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.head1{
+  padding: 4vw;
+  text-align: center;
+  color: white;
+  display: flex
+  flex-wrap:wrap;
+  background-color:#C39BD3   ;
+  border-color: #4A235A;
+  font-size: 1.5rem;
+
+}
+
+
+
+/* Responsive layout - when the screen is less than 768px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (min-width: 768px) {
+     
+.header{
+    width=100%;
+
+  }
+  
+}
+
+/* Responsive layout - when the screen is in between 481px and 767px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (min-width: 481px) and (max-width: 767px) {
+    
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  } 
+}
+
+
+/* Responsive layout - when the screen is less than 480px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 480px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+      text-align: center;
+    margin-top: 0;
+  }
+  
+  .header{
+    width=100%;
+    
+  }
+  .header p{
+    font-size: 0.8rem;
+    text-align: center;
+}
+/* Increase the font size of the heading */
+.header h1 {
+    font-size: 2rem;
+    }
+    h3
+   {
+    position: relative;
+    font-size: 1rem;
+    line-height: 1em;
+    font-weight: 150;
+    text-align: center;
+    color: #2b3033;
+    }
+
+   .image{
+    width:70%;
+    height: auto;
+    align-items: stretch;
+    }
+
+   .head1{
+    font-size: 1rem;
+}
+
+/*style image*/
+
+h2{
+    position: relative;
+    font-family: "Raleway",sans-serif;
+    font-size: 2rem;
+    line-height: 0.8em;
+    margin: 0.6em 0 0.4em;
+    font-weight: 900;
+    text-align: center;
+    color: #2b3033;
+    }
+span
+{
+    position: relative;
+    font-family: "Raleway1",sans-serif;
+    font-size: 0.6em;
+    line-height: 1.2em;
+    font-weight: 300;
+    color: #8e9aa1;
+    }
+
+.footer{
+    text-align: center;
+    background: #ddd;
+    font-size: 0.5rem;
+}
+
+.navbar a {
+        float: none;
+        width: 100%;
+           }
+           
+
+  h4{
+            font-size: 0.5rem;
+            text-align:  center;
+           }
+}
+
+
